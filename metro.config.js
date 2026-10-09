@@ -6,13 +6,19 @@ config.resolver.extraNodeModules = {
   ...config.resolver.extraNodeModules,
 };
 
-// RN 0.87 removed rn-get-polyfills.js but Expo SDK 57 metro-config still requires it.
-// Provide a stub so the bundler doesn't crash.
 const path = require('path');
 const fs = require('fs');
-const rnPath = path.join(__dirname, 'node_modules', 'react-native', 'rn-get-polyfills.js');
-if (!fs.existsSync(rnPath)) {
-  fs.writeFileSync(rnPath, "module.exports = () => [];\n");
+
+const rnRoot = path.join(__dirname, 'node_modules', 'react-native');
+const rnPolyfills = path.join(rnRoot, 'rn-get-polyfills.js');
+if (!fs.existsSync(rnPolyfills)) {
+  fs.writeFileSync(rnPolyfills, "module.exports = () => [];\n");
+}
+const rnPkgPath = path.join(rnRoot, 'package.json');
+const rnPkg = JSON.parse(fs.readFileSync(rnPkgPath, 'utf8'));
+if (rnPkg.exports && !rnPkg.exports['./rn-get-polyfills']) {
+  rnPkg.exports['./rn-get-polyfills'] = './rn-get-polyfills.js';
+  fs.writeFileSync(rnPkgPath, JSON.stringify(rnPkg, null, 2) + '\n');
 }
 
 module.exports = config;
