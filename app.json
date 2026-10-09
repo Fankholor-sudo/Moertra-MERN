@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Meortra",
+    "slug": "meortra",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "meortra",
+    "ios": { "supportsTablet": true },
+    "android": { "adaptiveIcon": { "backgroundColor": "#152844" } }
+  }
+}
