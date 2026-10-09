@@ -6,7 +6,20 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "scheme": "meortra",
-    "ios": { "supportsTablet": true },
-    "android": { "adaptiveIcon": { "backgroundColor": "#152844" } }
+    "icon": "./public/icon.svg",
+    "splash": {
+      "backgroundColor": "#152844"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.meortra.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#152844"
+      },
+      "package": "com.meortra.app"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
