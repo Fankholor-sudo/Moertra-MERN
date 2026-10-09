@@ -18,3 +18,4 @@
 {"_e":"devserver:start","_t":1791553807204,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
 {"_e":"metro:config","_t":1791553807391,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"expo:dev-tools-plugin:load","_t":1791553807502,"plugins":[]}
+{"_e":"metro:instantiate","_t":1791553808197,"atlas":false,"workers":6,"host":"::","port":8081}
