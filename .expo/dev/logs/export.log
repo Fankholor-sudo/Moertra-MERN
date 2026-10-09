@@ -40,3 +40,15 @@
 {"_e":"metro:bundling:done","_t":1791554953424,"id":"1","total":2074,"ms":196794.062805}
 {"_e":"metro:bundling:done","_t":1791554971596,"id":"3","total":2585,"ms":214939.078348}
 {"_e":"metro:bundling:done","_t":1791554988858,"id":"2","total":2587,"ms":232201.839419}
+{"_e":"root:init","_t":1791555357357,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791555357656,"nodeEnv":"production","babelEnv":"production","mode":"production"}
+{"_e":"env:load","_t":1791555357703,"mode":"production","files":["../../../.env"],"env":{"EXPO_PUBLIC_SUPABASE_ANON_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2x0IiwicmVmIjoiMGVjOTBiNTdkNmU5NWZjYmRhMTk4MzJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg4ODE1NzQsImV4cCI6MTc1ODg4MTU3NH0.9I8-U0x86Ak8t2DGaIk0HfvTSLsAyzdnz-Nw00mMkKw","EXPO_PUBLIC_SUPABASE_URL":"https://0ec90b57d6e95fcbda19832f.supabase.co"}}
+{"_e":"devserver:start","_t":1791555357725,"mode":"production","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":true}
+{"_e":"metro:config","_t":1791555358252,"serverRoot":"../../..","projectRoot":"../../..","exporting":true,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1791555358502,"atlas":false,"workers":4,"host":null,"port":null}
+{"_e":"metro:bundling:started","_t":1791555359421,"id":"1","platform":"web","environment":null,"entry":"node_modules/.pnpm/expo@57.0.27_@babel+core@7.29.7_supports-color@8.1.1__@expo+dom-webview@57.0.1_@expo+me_d7026b5b88758c26367067a7f16dbfba/node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791555359438,"id":"2","platform":"ios","environment":null,"entry":"node_modules/.pnpm/expo@57.0.27_@babel+core@7.29.7_supports-color@8.1.1__@expo+dom-webview@57.0.1_@expo+me_d7026b5b88758c26367067a7f16dbfba/node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791555359439,"id":"3","platform":"android","environment":null,"entry":"node_modules/.pnpm/expo@57.0.27_@babel+core@7.29.7_supports-color@8.1.1__@expo+dom-webview@57.0.1_@expo+me_d7026b5b88758c26367067a7f16dbfba/node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791555561105,"id":"1","total":2073,"ms":201684.104122}
+{"_e":"metro:bundling:done","_t":1791555582637,"id":"2","total":2586,"ms":223198.548502}
+{"_e":"metro:bundling:done","_t":1791555605540,"id":"3","total":2584,"ms":246100.870256}
