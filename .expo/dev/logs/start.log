@@ -122,3 +122,4 @@
 {"_e":"metro:bundling:done","_t":1791626721920,"id":"1","total":2236,"ms":2124.985}
 {"_e":"metro:bundling:done","_t":1791626722310,"id":"2","total":1,"ms":2451.905}
 {"_e":"metro:client_log","_t":1791626722494,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791626831386,"id":"3","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
