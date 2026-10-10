@@ -13,3 +13,4 @@
 {"_e":"expo:dev-tools-plugin:load","_t":1791621500975,"plugins":[]}
 {"_e":"metro:instantiate","_t":1791621501928,"atlas":false,"workers":6,"host":"::","port":8081}
 {"_e":"metro:bundling:started","_t":1791621502053,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791621503847,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
