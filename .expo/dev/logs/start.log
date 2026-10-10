@@ -54,3 +54,5 @@
 {"_e":"metro:bundling:done","_t":1791623535706,"id":"e","total":1,"ms":319.275}
 {"_e":"metro:client_log","_t":1791623535796,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
 {"_e":"metro:bundling:started","_t":1791623600202,"id":"f","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791623602069,"id":"f","total":1,"ms":1866.53}
+{"_e":"metro:client_log","_t":1791623602609,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
