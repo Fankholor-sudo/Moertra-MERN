@@ -5,33 +5,3 @@
 {"_e":"metro:config","_t":1791548598536,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"expo:dev-tools-plugin:load","_t":1791548598681,"plugins":[]}
 {"_e":"metro:instantiate","_t":1791548599127,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"root:init","_t":1791621500538,"format":"v0-jsonl","version":"57.0.28"}
-{"_e":"env:mode","_t":1791621500538,"nodeEnv":"development","babelEnv":"development","mode":"development"}
-{"_e":"env:load","_t":1791621500539,"mode":"development","files":[],"env":{}}
-{"_e":"devserver:start","_t":1791621500686,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
-{"_e":"metro:config","_t":1791621500880,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
-{"_e":"expo:dev-tools-plugin:load","_t":1791621500975,"plugins":[]}
-{"_e":"metro:instantiate","_t":1791621501928,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"metro:bundling:started","_t":1791621502053,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:started","_t":1791621503847,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791621509066,"id":"1","total":2107,"ms":7013.08}
-{"_e":"metro:bundling:done","_t":1791621509351,"id":"2","total":1,"ms":5503.885}
-{"_e":"metro:client_log","_t":1791621509578,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791621636018,"id":"3","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791621638653,"id":"3","total":1,"ms":2634.765}
-{"_e":"metro:client_log","_t":1791621638759,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791621955169,"id":"4","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791621955515,"id":"4","total":1,"ms":345.885}
-{"_e":"metro:client_log","_t":1791621955600,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791622226285,"id":"5","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791622227936,"id":"5","total":1,"ms":1649.68}
-{"_e":"metro:client_log","_t":1791622228583,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791622293152,"id":"6","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791622293463,"id":"6","total":1,"ms":310.915}
-{"_e":"metro:client_log","_t":1791622293540,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791622339974,"id":"7","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791622340256,"id":"7","total":1,"ms":281.56}
-{"_e":"metro:client_log","_t":1791622340341,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
-{"_e":"metro:bundling:started","_t":1791622407124,"id":"8","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791622407472,"id":"8","total":1,"ms":348.715}
-{"_e":"metro:client_log","_t":1791622407551,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
