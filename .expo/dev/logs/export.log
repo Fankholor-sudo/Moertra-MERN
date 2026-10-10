@@ -88,3 +88,15 @@
 {"_e":"metro:bundling:done","_t":1791626637761,"id":"1","total":2206,"ms":251499.638218}
 {"_e":"metro:bundling:done","_t":1791626664597,"id":"3","total":2668,"ms":278256.101147}
 {"_e":"metro:bundling:done","_t":1791626690297,"id":"2","total":2670,"ms":303956.150768}
+{"_e":"root:init","_t":1791628234386,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791628234746,"nodeEnv":"production","babelEnv":"production","mode":"production"}
+{"_e":"env:load","_t":1791628234750,"mode":"production","files":["../../../.env"],"env":{"EXPO_PUBLIC_SUPABASE_ANON_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdzbGhtdGFraHNicGVxaGlpYWZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE2MTgxMDUsImV4cCI6MjEwNzE5NDEwNX0.n5rniyJe22Fc0ckwy7G8NbWUSQh0oT7PsVsCZzCxsxs","EXPO_PUBLIC_SUPABASE_URL":"https://gslhmtakhsbpeqhiiaff.supabase.co"}}
+{"_e":"devserver:start","_t":1791628234776,"mode":"production","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":true}
+{"_e":"metro:config","_t":1791628235580,"serverRoot":"../../..","projectRoot":"../../..","exporting":true,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1791628235807,"atlas":false,"workers":4,"host":null,"port":null}
+{"_e":"metro:bundling:started","_t":1791628236866,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791628236888,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791628236889,"id":"3","platform":"android","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791628498948,"id":"1","total":2207,"ms":262081.969407}
+{"_e":"metro:bundling:done","_t":1791628521738,"id":"3","total":2668,"ms":284849.370139}
+{"_e":"metro:bundling:done","_t":1791628543726,"id":"2","total":2670,"ms":306837.876646}

@@ -1,5 +1,14 @@
 import React from 'react'
-import { Modal, Pressable, StyleSheet, Text, View } from 'react-native'
+import {
+  KeyboardAvoidingView,
+  Modal,
+  Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native'
 import { X } from 'lucide-react-native'
 import { JobRequest } from '../../hooks/useJobRequest'
 import { useTheme } from '../../theme/ThemeContext'
@@ -34,7 +43,10 @@ export function JobRequestSheet({ request }: Props) {
 
   return (
     <Modal visible={visible} animationType="slide" transparent onRequestClose={close}>
-      <View style={styles.backdrop}>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        style={styles.backdrop}
+      >
         <View style={[styles.sheet, { backgroundColor: colors.surface }]}>
           <View style={styles.header}>
             <View>
@@ -45,9 +57,16 @@ export function JobRequestSheet({ request }: Props) {
               <X size={20} color={colors.ink} />
             </Pressable>
           </View>
-          {renderBody()}
+          <ScrollView
+            keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="interactive"
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={styles.body}
+          >
+            {renderBody()}
+          </ScrollView>
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   )
 }
@@ -62,4 +81,5 @@ const styles = StyleSheet.create({
     maxHeight: '88%',
   },
   header: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20 },
+  body: { paddingBottom: 8 },
 })
