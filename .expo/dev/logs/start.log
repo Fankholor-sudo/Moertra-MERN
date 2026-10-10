@@ -80,3 +80,6 @@
 {"_e":"metro:bundling:started","_t":1791624188252,"id":"n","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
 {"_e":"metro:bundling:done","_t":1791624190856,"id":"n","total":1,"ms":2603.37}
 {"_e":"metro:client_log","_t":1791624191680,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:bundling:started","_t":1791624255242,"id":"o","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791624255597,"id":"o","total":1,"ms":355.03}
+{"_e":"metro:client_log","_t":1791624255682,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
