@@ -32,3 +32,6 @@
 {"_e":"metro:client_log","_t":1791622682711,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
 {"_e":"metro:bundling:started","_t":1791622698113,"id":"5","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
 {"_e":"metro:bundling:done","_t":1791622705726,"id":"5","total":2718,"ms":7613.444999}
+{"_e":"metro:bundling:started","_t":1791622991183,"id":"7","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791622991492,"id":"7","total":1,"ms":308.810001}
+{"_e":"metro:client_log","_t":1791622991655,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
