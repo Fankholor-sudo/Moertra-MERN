@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import { CATEGORIES } from '../../data/sampleData'
 import { Category } from '../../types'
-import { CategoryCard, categoryGridStyle } from '../common/CategoryCard'
+import { CategoryCard, categoryGridStyles } from '../common/CategoryCard'
 
 type Props = {
   onSelect: (category: Category) => void
@@ -10,9 +10,9 @@ type Props = {
 
 export function CategoryPicker({ onSelect }: Props) {
   return (
-    <View style={categoryGridStyle}>
+    <View style={categoryGridStyles.rows}>
       {CATEGORIES.map((item) => (
-        <CategoryCard key={item} category={item} onPress={() => onSelect(item)} showChevron />
+        <CategoryCard key={item} category={item} variant="row" onPress={() => onSelect(item)} />
       ))}
     </View>
   )

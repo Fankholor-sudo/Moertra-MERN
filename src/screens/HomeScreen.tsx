@@ -1,9 +1,11 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { ChevronRight, Search } from 'lucide-react-native'
-import { CategoryCard, categoryGridStyle } from '../components/common/CategoryCard'
+import { CategoryCard, categoryGridStyles } from '../components/common/CategoryCard'
 import { ScreenHeader } from '../components/common/ScreenHeader'
+import { HeroBanner } from '../components/home/HeroBanner'
 import { CATEGORIES, NEARBY_ARTISANS } from '../data/sampleData'
+import { useProfile } from '../profile/ProfileContext'
 import { useTheme } from '../theme/ThemeContext'
 import { typography } from '../theme/typography'
 
@@ -13,6 +15,8 @@ type Props = {
 
 export function HomeScreen({ onPostJob }: Props) {
   const { colors } = useTheme()
+  const { profile } = useProfile()
+  const firstName = profile?.fullName.split(' ')[0] ?? 'there'
 
   return (
     <View>
@@ -21,10 +25,10 @@ export function HomeScreen({ onPostJob }: Props) {
       <View style={styles.welcome}>
         <View>
           <Text style={[styles.greeting, { color: colors.ink }]}>Good morning,</Text>
-          <Text style={[styles.name, { color: colors.ink }]}>Jordan</Text>
+          <Text style={[styles.name, { color: colors.ink }]}>{firstName}</Text>
         </View>
         <View style={[styles.weather, { backgroundColor: colors.soft }]}>
-          <Text>24°</Text>
+          <Text style={{ color: colors.ink }}>24°</Text>
         </View>
       </View>
 
@@ -38,31 +42,30 @@ export function HomeScreen({ onPostJob }: Props) {
         </Text>
       </Pressable>
 
+      <HeroBanner onPostJob={onPostJob} />
+
+      <Text style={[typography.eyebrow, styles.sectionEyebrow, { color: colors.muted }]}>
+        QUICK START
+      </Text>
       <View style={styles.sectionHead}>
-        <Text style={[typography.sectionTitle, { color: colors.ink }]}>Get it fixed.</Text>
-        <Pressable onPress={onPostJob}>
-          <Text style={[styles.link, { color: colors.accent }]}>See all</Text>
+        <Text style={[styles.sectionTitle, { color: colors.ink }]}>What do you need?</Text>
+        <Pressable onPress={onPostJob} style={styles.link}>
+          <Text style={[styles.linkText, { color: colors.accent }]}>See all</Text>
+          <ChevronRight size={16} color={colors.accent} />
         </Pressable>
       </View>
-
-      <View style={categoryGridStyle}>
+      <View style={categoryGridStyles.tiles}>
         {CATEGORIES.slice(0, 4).map((item) => (
-          <CategoryCard key={item} category={item} onPress={onPostJob} />
+          <CategoryCard key={item} category={item} variant="tile" onPress={onPostJob} />
         ))}
       </View>
 
-      <View style={[styles.banner, { backgroundColor: colors.navy }]}>
-        <Text style={styles.bannerEyebrow}>LOCAL HELP, WITHOUT THE HASSLE</Text>
-        <Text style={styles.bannerTitle}>Skilled people, right nearby.</Text>
-        <Pressable onPress={onPostJob} style={styles.bannerButton}>
-          <Text>Post a job</Text>
-          <ChevronRight size={16} />
-        </Pressable>
-      </View>
-
-      <Text style={[typography.sectionTitle, styles.artisansTitle, { color: colors.ink }]}>
-        Trusted artisans near you
+      <Text
+        style={[typography.eyebrow, styles.sectionEyebrow, styles.spaced, { color: colors.muted }]}
+      >
+        RECOMMENDED FOR YOU
       </Text>
+      <Text style={[styles.sectionTitle, { color: colors.ink }]}>Top near you</Text>
       {NEARBY_ARTISANS.map((artisan) => (
         <View
           key={artisan.name}
@@ -108,30 +111,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 10,
     alignItems: 'center',
-    marginBottom: 26,
+    marginBottom: 24,
   },
   searchText: { fontSize: 13 },
+  sectionEyebrow: { fontSize: 11, letterSpacing: 2 },
+  spaced: { marginTop: 32 },
   sectionHead: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 12,
+    marginBottom: 16,
   },
-  link: { fontSize: 12, fontWeight: '700' },
-  banner: { borderRadius: 18, padding: 18, marginTop: 20 },
-  bannerEyebrow: { color: '#a9c4ff', fontSize: 9, fontWeight: '800', letterSpacing: 1 },
-  bannerTitle: { color: '#fff', fontSize: 23, fontWeight: '800', marginTop: 8, marginBottom: 16 },
-  bannerButton: {
-    alignSelf: 'flex-start',
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    paddingVertical: 10,
-    paddingHorizontal: 14,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  artisansTitle: { marginTop: 28 },
+  sectionTitle: { fontSize: 22, fontWeight: '600', letterSpacing: -0.6 },
+  link: { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  linkText: { fontSize: 14, fontWeight: '600' },
   person: {
     borderWidth: 1,
     borderRadius: 15,
@@ -139,7 +132,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    marginTop: 10,
+    marginTop: 12,
   },
   avatar: {
     width: 42,

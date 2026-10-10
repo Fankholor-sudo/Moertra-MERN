@@ -1,10 +1,17 @@
 import React from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { Bell, Moon, Sun } from 'lucide-react-native'
+import { useProfile } from '../../profile/ProfileContext'
 import { useTheme } from '../../theme/ThemeContext'
+import { Avatar } from '../common/Avatar'
 
-export function TopBar() {
+type Props = {
+  onOpenAccount: () => void
+}
+
+export function TopBar({ onOpenAccount }: Props) {
   const { colors, isDark, toggleTheme } = useTheme()
+  const { profile } = useProfile()
   const iconButtonStyle = [styles.iconButton, { backgroundColor: colors.soft }]
 
   return (
@@ -20,6 +27,15 @@ export function TopBar() {
         </Pressable>
         <Pressable accessibilityLabel="Notifications" style={iconButtonStyle}>
           <Bell size={18} color={colors.navy} />
+          <View style={[styles.dot, { backgroundColor: colors.alert, borderColor: colors.soft }]} />
+        </Pressable>
+        <Pressable accessibilityLabel="Open account" onPress={onOpenAccount}>
+          <Avatar
+            name={profile?.fullName ?? ''}
+            imageUrl={profile?.avatarUrl ?? null}
+            size={38}
+            radius={19}
+          />
         </Pressable>
       </View>
     </View>
@@ -36,12 +52,21 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   brand: { fontSize: 22, fontWeight: '800', letterSpacing: -1 },
-  actions: { flexDirection: 'row', gap: 8 },
+  actions: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   iconButton: {
     width: 38,
     height: 38,
     borderRadius: 19,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  dot: {
+    position: 'absolute',
+    top: 8,
+    right: 9,
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    borderWidth: 1.5,
   },
 })

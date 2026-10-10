@@ -1,54 +1,81 @@
 import React from 'react'
-import { Pressable, StyleSheet, Text } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { ChevronRight } from 'lucide-react-native'
+import { CATEGORY_STYLES } from '../../data/categoryStyles'
 import { useTheme } from '../../theme/ThemeContext'
 import { Category } from '../../types'
 
 type Props = {
   category: Category
   onPress: () => void
-  showChevron?: boolean
+  variant: 'tile' | 'row'
 }
 
-export function CategoryCard({ category, onPress, showChevron = false }: Props) {
+export function CategoryCard({ category, onPress, variant }: Props) {
   const { colors } = useTheme()
+  const { icon: Icon, tint } = CATEGORY_STYLES[category]
+  const isTile = variant === 'tile'
 
   return (
     <Pressable
+      accessibilityRole="button"
       onPress={onPress}
-      style={[styles.card, { borderColor: colors.line, backgroundColor: colors.surface }]}
+      style={({ pressed }) => [
+        isTile ? styles.tile : styles.row,
+        { borderColor: colors.line, backgroundColor: colors.surface },
+        pressed && styles.pressed,
+      ]}
     >
-      <Text style={[styles.letter, { color: colors.accent, backgroundColor: colors.soft }]}>
-        {category[0]}
+      <View
+        style={[styles.iconWrap, isTile && styles.iconWrapLarge, { backgroundColor: `${tint}22` }]}
+      >
+        <Icon size={isTile ? 24 : 18} color={tint} strokeWidth={1.8} />
+      </View>
+      <Text
+        numberOfLines={1}
+        style={[isTile ? styles.tileLabel : styles.rowLabel, { color: colors.ink }]}
+      >
+        {category}
       </Text>
-      <Text style={[styles.label, { color: colors.ink }]}>{category}</Text>
-      {showChevron ? <ChevronRight size={16} color={colors.muted} /> : null}
+      {isTile ? null : <ChevronRight size={16} color={colors.muted} />}
     </Pressable>
   )
 }
 
-export const categoryGridStyle = StyleSheet.create({
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
-}).grid
+export const categoryGridStyles = StyleSheet.create({
+  tiles: { flexDirection: 'row', gap: 8 },
+  rows: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+})
 
 const styles = StyleSheet.create({
-  card: {
+  tile: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: 16,
+    paddingVertical: 16,
+    paddingHorizontal: 4,
+    alignItems: 'center',
+    gap: 10,
+  },
+  row: {
     width: '48%',
-    minHeight: 70,
+    minHeight: 64,
     borderWidth: 1,
     borderRadius: 14,
     padding: 12,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 9,
+    gap: 10,
   },
-  letter: {
-    width: 30,
-    height: 30,
+  pressed: { opacity: 0.7, transform: [{ scale: 0.97 }] },
+  iconWrap: {
+    width: 32,
+    height: 32,
     borderRadius: 10,
-    textAlign: 'center',
-    textAlignVertical: 'center',
-    fontWeight: '800',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  label: { flex: 1, fontSize: 12, fontWeight: '700' },
+  iconWrapLarge: { width: 48, height: 48, borderRadius: 14 },
+  tileLabel: { fontSize: 11, fontWeight: '600' },
+  rowLabel: { flex: 1, fontSize: 12, fontWeight: '700' },
 })

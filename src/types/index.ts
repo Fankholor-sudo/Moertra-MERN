@@ -20,3 +20,11 @@ export type JobDetails = {
   description: string
   specifics: string
 }
+
+export type Profile = {
+  fullName: string
+  location: string
+  memberSince: number
+  isVerified: boolean
+  avatarUrl: string | null
+}

@@ -35,7 +35,7 @@ export function AppShell() {
     <SafeAreaView style={[styles.safe, { backgroundColor: colors.canvas }]}>
       <StatusBar style={isDark ? 'light' : 'dark'} />
       <View style={styles.app}>
-        <TopBar />
+        <TopBar onOpenAccount={() => setTab('Account')} />
         <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
           {renderScreen()}
         </ScrollView>
