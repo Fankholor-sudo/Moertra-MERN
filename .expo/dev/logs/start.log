@@ -14,3 +14,5 @@
 {"_e":"metro:instantiate","_t":1791610598906,"atlas":false,"workers":6,"host":"::","port":8081}
 {"_e":"metro:bundling:started","_t":1791610599059,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
 {"_e":"metro:bundling:failed","_t":1791610605615,"id":"1","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1791610762048,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:failed","_t":1791610762396,"id":"2","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
