@@ -37,3 +37,5 @@
 {"_e":"expo:dev-tools-plugin:load","_t":1791619546363,"plugins":[]}
 {"_e":"metro:instantiate","_t":1791619547363,"atlas":false,"workers":6,"host":"::","port":8081}
 {"_e":"metro:bundling:started","_t":1791619547497,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791619550845,"id":"1","total":2105,"ms":3348.12}
+{"_e":"metro:client_log","_t":1791619551007,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
