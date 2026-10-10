@@ -5,37 +5,3 @@
 {"_e":"metro:config","_t":1791548598536,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"expo:dev-tools-plugin:load","_t":1791548598681,"plugins":[]}
 {"_e":"metro:instantiate","_t":1791548599127,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"root:init","_t":1791610597475,"format":"v0-jsonl","version":"57.0.28"}
-{"_e":"env:mode","_t":1791610597475,"nodeEnv":"development","babelEnv":"development","mode":"development"}
-{"_e":"env:load","_t":1791610597476,"mode":"development","files":[],"env":{}}
-{"_e":"devserver:start","_t":1791610597607,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
-{"_e":"metro:config","_t":1791610597799,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
-{"_e":"expo:dev-tools-plugin:load","_t":1791610597908,"plugins":[]}
-{"_e":"metro:instantiate","_t":1791610598906,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"metro:bundling:started","_t":1791610599059,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:failed","_t":1791610605615,"id":"1","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
-{"_e":"metro:bundling:started","_t":1791610762048,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:failed","_t":1791610762396,"id":"2","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
-{"_e":"metro:bundling:started","_t":1791610829003,"id":"3","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:failed","_t":1791610829317,"id":"3","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
-{"_e":"root:init","_t":1791611498897,"format":"v0-jsonl","version":"57.0.28"}
-{"_e":"env:mode","_t":1791611498898,"nodeEnv":"development","babelEnv":"development","mode":"development"}
-{"_e":"env:load","_t":1791611498899,"mode":"development","files":[],"env":{}}
-{"_e":"devserver:start","_t":1791611499027,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
-{"_e":"metro:config","_t":1791611499223,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
-{"_e":"expo:dev-tools-plugin:load","_t":1791611499329,"plugins":[]}
-{"_e":"metro:instantiate","_t":1791611500473,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"metro:bundling:started","_t":1791611500623,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:started","_t":1791611502113,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:failed","_t":1791611507334,"id":"2","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
-{"_e":"metro:bundling:failed","_t":1791611507335,"id":"1","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /home/project/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
-{"_e":"root:init","_t":1791619545951,"format":"v0-jsonl","version":"57.0.28"}
-{"_e":"env:mode","_t":1791619545951,"nodeEnv":"development","babelEnv":"development","mode":"development"}
-{"_e":"env:load","_t":1791619545953,"mode":"development","files":[],"env":{}}
-{"_e":"devserver:start","_t":1791619546085,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
-{"_e":"metro:config","_t":1791619546275,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
-{"_e":"expo:dev-tools-plugin:load","_t":1791619546363,"plugins":[]}
-{"_e":"metro:instantiate","_t":1791619547363,"atlas":false,"workers":6,"host":"::","port":8081}
-{"_e":"metro:bundling:started","_t":1791619547497,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
-{"_e":"metro:bundling:done","_t":1791619550845,"id":"1","total":2105,"ms":3348.12}
-{"_e":"metro:client_log","_t":1791619551007,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
