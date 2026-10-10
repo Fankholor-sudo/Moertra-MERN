@@ -64,3 +64,15 @@
 {"_e":"metro:bundling:done","_t":1791622288292,"id":"1","total":2081,"ms":200686.082065}
 {"_e":"metro:bundling:done","_t":1791622306517,"id":"3","total":2591,"ms":218879.559445}
 {"_e":"metro:bundling:done","_t":1791622323835,"id":"2","total":2593,"ms":236198.357605}
+{"_e":"root:init","_t":1791624802983,"format":"v0-jsonl","version":"57.0.28"}
+{"_e":"env:mode","_t":1791624803366,"nodeEnv":"production","babelEnv":"production","mode":"production"}
+{"_e":"env:load","_t":1791624803378,"mode":"production","files":["../../../.env"],"env":{"EXPO_PUBLIC_SUPABASE_ANON_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJib2x0IiwicmVmIjoiMGVjOTBiNTdkNmU5NWZjYmRhMTk4MzJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg4ODE1NzQsImV4cCI6MTc1ODg4MTU3NH0.9I8-U0x86Ak8t2DGaIk0HfvTSLsAyzdnz-Nw00mMkKw","EXPO_PUBLIC_SUPABASE_URL":"https://0ec90b57d6e95fcbda19832f.supabase.co"}}
+{"_e":"devserver:start","_t":1791624803422,"mode":"production","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":true}
+{"_e":"metro:config","_t":1791624803987,"serverRoot":"../../..","projectRoot":"../../..","exporting":true,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1791624804226,"atlas":false,"workers":4,"host":null,"port":null}
+{"_e":"metro:bundling:started","_t":1791624805116,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791624805181,"id":"2","platform":"ios","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1791624805181,"id":"3","platform":"android","environment":null,"entry":"node_modules/expo/AppEntry.js"}
+{"_e":"metro:bundling:done","_t":1791625001092,"id":"1","total":2101,"ms":195975.350667}
+{"_e":"metro:bundling:done","_t":1791625017640,"id":"3","total":2611,"ms":212459.068808}
+{"_e":"metro:bundling:done","_t":1791625033889,"id":"2","total":2613,"ms":228707.941999}

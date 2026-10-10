@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "esnext"
-    ],
+    "lib": ["esnext"],
     "allowJs": true,
     "target": "ESNext",
     "skipLibCheck": true,
@@ -16,12 +14,7 @@
     "jsx": "react-jsx",
     "incremental": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
   "extends": "expo/tsconfig.base"
 }

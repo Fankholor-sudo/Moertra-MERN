@@ -9,7 +9,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export"
+    "build": "expo export",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json}\""
   },
   "dependencies": {
     "@expo/metro-runtime": "~57.0.16",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/react": "^19",
+    "prettier": "^3.9.10",
     "typescript": "~6.0.3"
   }
 }
